@@ -19,7 +19,7 @@ class CreateActorsTable extends Migration
             $table->string('lastName');
             $table->string('dateOfBirth');
             $table->string('mostRecentShow');
-            $table->string('numberOfShows')->default('1');
+            $table->integer('numberOfShows')->default('1');
             $table->timestamps();
         });
     }
