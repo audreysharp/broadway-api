@@ -42,8 +42,6 @@ Route::delete('/songs/{id}', 'SongController@destroy');
 
 // HTML/view responses
 Route::get('/', function() {
-  // can make new controller, like HomeController
-  // but only have one route, so can just use inline function
   return view('home');
 });
 
