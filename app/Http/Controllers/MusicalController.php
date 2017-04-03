@@ -19,7 +19,7 @@ class MusicalController extends Controller
         // create new musical - POST /musicals
         // DB::table('musicals')->insert();
         Musical::create($request->all()); // create a new musical object
-        return Response::json(['created' => true]);
+        return Response::json(['musical created' => true]);
     }
 
     public function show($id) {
@@ -32,13 +32,13 @@ class MusicalController extends Controller
         // update a single musical - PUT /musicals/$id
         $musical = Musical::find($id);
         $musical->update($request->all());
-        return Response::json(['updated' => true]);
+        return Response::json(['musical updated' => true]);
     }
 
     public function destroy($id) {
         // remove a single musical -  DELETE /musicals/$id
         $musical = Musical::find($id);
         $musical->delete();
-        return Response::json(['deleted' => true]);
+        return Response::json(['musical deleted' => true]);
     }
 }

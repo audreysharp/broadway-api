@@ -19,7 +19,7 @@ class SongController extends Controller
         // create new song - POST /songs
         // DB::table('songs')->insert();
         Song::create($request->all()); // create a new song object
-        return Response::json(['created' => true]);
+        return Response::json(['song created' => true]);
     }
 
     public function show($id) {
@@ -32,13 +32,13 @@ class SongController extends Controller
         // update a single song - PUT /songs/$id
         $song = Song::find($id);
         $song->update($request->all());
-        return Response::json(['updated' => true]);
+        return Response::json(['song updated' => true]);
     }
 
     public function destroy($id) {
         // remove a single song -  DELETE /songs/$id
         $song = Song::find($id);
         $song->delete();
-        return Response::json(['deleted' => true]);
+        return Response::json(['song deleted' => true]);
     }
 }

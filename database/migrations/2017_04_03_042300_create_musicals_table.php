@@ -16,13 +16,12 @@ class CreateMusicalsTable extends Migration
         Schema::create('musicals', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
+            $table->string('theatre');
             $table->string('director');
             $table->string('music');
             $table->string('lyrics');
             $table->string('book');
             $table->string('openDate');
-            $table->double('lowestTicketPrice');
-            $table->double('highestTicketPrice');
             $table->timestamps();
         });
     }

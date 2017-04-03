@@ -19,7 +19,7 @@ class ActorController extends Controller
         // create new actor - POST /actors
         // DB::table('actors')->insert();
         Actor::create($request->all()); // create a new actor object
-        return Response::json(['created' => true]);
+        return Response::json(['actor created' => true]);
     }
 
     public function show($id) {
@@ -32,13 +32,13 @@ class ActorController extends Controller
         // update a single actor - PUT /actors/$id
         $actor = Actor::find($id);
         $actor->update($request->all());
-        return Response::json(['updated' => true]);
+        return Response::json(['actor updated' => true]);
     }
 
     public function destroy($id) {
         // remove a single actor -  DELETE /actors/$id
         $actor = Actor::find($id);
         $actor->delete();
-        return Response::json(['deleted' => true]);
+        return Response::json(['actor deleted' => true]);
     }
 }
