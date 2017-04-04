@@ -7,13 +7,19 @@
   <title>Broadway API</title>
 </head>
 <body>
-   <nav>
-    <li></li>
-   </nav>
-   <div class="container">
+  <div class="container">
     @yield('content') 
   </div>
 
-  @yield('footer') 
+  <div class="container">
+    @yield('footer')
+  </div>
+
+  <div class="container">
+    @yield('credits')
+  </div>
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
 </body>
 </html>
