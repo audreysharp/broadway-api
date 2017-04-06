@@ -19,8 +19,8 @@ class CreateSongsTable extends Migration
             $table->string('composer');
             $table->string('artist');
             $table->string('musical');
-            $table->string('duration')->default('00:00');
-            $table->integer('trackNumber')->default('0');
+            $table->string('duration');
+            $table->integer('trackNumber');
             $table->timestamps();
         });
     }

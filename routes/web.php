@@ -41,10 +41,6 @@ Route::put('/songs/{id}', 'SongController@update');
 Route::delete('/songs/{id}', 'SongController@destroy');
 
 // HTML/view responses
-Route::get('/', function() {
-  return view('home');
-});
-
-Route::get('/credits', function() {
-  return view('credits');
+Route::get('/', function() { // root page
+  return view('app');
 });
