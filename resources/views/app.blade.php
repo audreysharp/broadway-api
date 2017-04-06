@@ -68,6 +68,18 @@
               font-weight: 300;
               padding: 10px 100px;
             }
+
+            .credits {
+                font-size: 12px;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                /*max-width: 500px;*/
+                font-weight: 300;
+                padding: 10px 100px;
+                max-width: 100%;
+            }
         </style>
     </head>
     <body>
@@ -86,6 +98,10 @@
                     <a href="https://audreysharp.gitbooks.io/broadway-musicals-api/content">API Documentation</a>
                     <a href="https://github.com/audreysharp/broadway-api/">Source Code</a>
                     <a href="https://github.com/audreysharp/">Project Portfolio</a>
+                </div>
+
+                <div class="credits">
+                    Built with <a href="php.net">PHP</a>, <a href="https://laravel.com/">Laravel</a>, and <a href="https://www.mysql.com/">MySQL<a>.
                 </div>
             </div>
         </div>

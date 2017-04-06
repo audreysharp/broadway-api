@@ -10,7 +10,8 @@ Clone this repository.
 
 In MAMP, set the project root to the 'public' folder of the project.
 
-The database the tables are stored in it named 'broadway'.
+The database the tables are stored in is named 'broadway'.
+Ensure that you already have or have created a database named 'broadway'.
 
 Run php artisan:migrate to make the tables for the API.
 
