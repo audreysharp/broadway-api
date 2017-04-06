@@ -101,7 +101,7 @@
                 </div>
 
                 <div class="credits">
-                    Built with <a href="php.net">PHP</a>, <a href="https://laravel.com/">Laravel</a>, and <a href="https://www.mysql.com/">MySQL<a>.
+                    Built with <a href="https://php.net">PHP</a>, <a href="https://laravel.com/">Laravel</a>, and <a href="https://www.mysql.com/">MySQL<a>.
                 </div>
             </div>
         </div>
